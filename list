@@ -1,0 +1,142 @@
+#interchange first and last element(01)
+list1=["0","1","2","3","4","5","6","7","8"]
+print(list1)
+def interchange(list1):
+    if list1:
+        list1[0], list1[-1] = list1[-1], list1[0]
+    return list1;
+list2= interchange(list1)
+print(list2)
+
+#swap the value in list(02)
+list1[2],list1[5]=list1[5],list1[2]
+print("sweped list: ",list1)
+
+#length of list(03)
+print("length of list:",len(list1))
+
+#check element(04)
+if "4" in list1:
+    print("yes, 4 is in list1")
+
+#clear list(05)
+list1.clear()
+print(list1)
+
+#reversing list(06)
+list=["0","1","2","3","4","5","6","7","8"]
+list3=[list[len(list) - i]
+            for i in range(1, len(list)+1)]
+print(list3)
+
+#find sum of element in list(07)
+count=0
+for c in list:
+    c=int(c)
+    count += c
+print("sum of list: ",count)
+
+
+#multiply all number in llist(08)
+print(list)
+multi=1
+for c in list:
+    c=int(c)
+    multi *= c
+print("Multi. of array: ",multi)
+
+#find smallest number(09)
+print("\n")
+list10=["5", "-2", "0", "-6", "30", "-25", "15", "-3", "20", "7", "-1", "23"]
+print(list10)
+list10 = [int(x) for x in list10]
+list10.sort()
+print("Sorted list:", list10)
+print("smallest number: ",list10[0])
+# print()
+
+#find largest number(10)
+print("largest number: ",list10[-1])
+# print()
+
+#find second large number(11)
+print("second large number: ",list10[-2])
+# print()
+
+#N largest number(12)
+n=int(input("n: "))
+list10.sort(reverse = True)
+print("N large number: ",list10[:n])
+
+#print even number(13)
+list4=[]
+for x in list:
+    x = int(x)
+    if (x % 2) == 0:
+        x = int(x)
+        list4. append(x)
+print(list4)
+
+#print odd number(14)
+list5=[]
+for x in list:
+    x = int(x)
+    if (x % 2) != 0:
+        x = int(x)
+        list5. append(x)
+print(list5)
+
+#print even number in range(15)
+list6=[]
+for x in range(25):
+    x = int(x)
+    if (x % 2) == 0:
+        x = int(x)
+        list6. append(x)
+print(list6)
+
+#print odd number in range(16)
+list7=[]
+for x in range(26):
+    x = int(x)
+    if (x % 2) != 0:
+        x = int(x)
+        list7. append(x)
+print(list7)
+
+#print positive number(17)
+list8=["5", "-2", "0", "-6", "30", "-25", "-15", "-3", "20", "7", "-1", "23"]
+print(list8)
+for x in list8:
+    x = int(x)
+    if x >= 0:
+        print(x, end = ' ')
+
+#print negative number(18)
+print("\n")
+list9 = ["5", "-2", "0", "-6", "30", "-25", "15", "-3", "20", "7", "-1", "23"]
+print(list9)
+for y in list8:
+    y = int(y)
+    if y < 0:
+        print(y, end = ' ')
+
+#print positive number in range(19)
+print("\n")
+# a = -10
+# b = 10
+print("print positive number in range: ")
+for x in range(-10,10):
+    if x >= 0:
+        print(x, end = ' ')
+
+
+#print negative number in range(20)
+print("\n")
+# a = -10
+# b = 10
+
+print("print negative number in range: ")
+for x in range(-10,10):
+    if x < 0:
+        print(x, end = ' ')
